@@ -1,0 +1,18 @@
+[package]
+edition = "2021"
+name = "esp-ahrs-probe"
+rust-version = "1.86"
+version = "0.1.0"
+
+[[bin]]
+name = "esp-ahrs-probe"
+path = "./src/bin/main.rs"
+
+[dependencies]
+defmt = "1.0.1"
+esp-bootloader-esp-idf = { version = "0.2.0", features = ["esp32c6"] }
+esp-hal = { version = "=1.0.0-rc.0", features = ["defmt", "esp32c6", "unstable"] }
+rtt-target = { version = "0.6.1", features = ["defmt"] }
+
+[profile.dev]
+opt-level = "s"
