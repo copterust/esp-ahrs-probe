@@ -35,6 +35,6 @@ raw measurements and finding ones that turn distorted ellipsoid into perfect
 sphere.
 
 Parameters are stored in [MagCalibration](https://github.com/copterust/esp-ahrs-probe/blob/main/src/config.rs#L10-L21),
-magnetic reference is stored in [AccelMagMeasurement](https://github.com/copterust/esp-ahrs-probe/blob/main/src/ahrs.rs#L61).
+magnetic reference is stored in [AccelMagMeasurement](https://github.com/copterust/esp-ahrs-probe/blob/main/src/ahrs.rs#L64).
 
 You need to adjust them for your location and sensor.
