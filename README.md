@@ -6,8 +6,7 @@ It was tested with GY-86 and [ESP32-C6-Zero](https://www.waveshare.com/wiki/ESP3
 </p>
 
 Running at 160 MHz (no FPU), it achieves approximately 19 Hz sampling.
-
-Connections are simple, just plug one PCB into another as on an image above:
+Connections are simple, just plug one PCB into another as on an image above.
 
 | ESP32  | GY-86  |
 |--------|--------|
