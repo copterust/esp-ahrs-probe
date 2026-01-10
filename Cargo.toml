@@ -3,6 +3,7 @@ edition = "2021"
 name = "esp-ahrs-probe"
 rust-version = "1.86"
 version = "0.1.0"
+default-run = "esp-ahrs-probe"
 
 [[bin]]
 name = "esp-ahrs-probe"
@@ -10,9 +11,15 @@ path = "./src/bin/main.rs"
 
 [dependencies]
 defmt = "1.0.1"
+embedded-hal-compat = "0.13.0"
+esp-alloc = { version = "0.9.0", features = ["esp32c6"] }
 esp-bootloader-esp-idf = { version = "0.2.0", features = ["esp32c6"] }
 esp-hal = { version = "=1.0.0-rc.0", features = ["defmt", "esp32c6", "unstable"] }
+estima = "0.3.0"
+mpu6050 = "0.1.6"
+nalgebra = { version = "0.33.2", default-features = false, features = ["alloc", "libm"] }
 rtt-target = { version = "0.6.1", features = ["defmt"] }
+shared-bus = "0.3.1"
 
 [profile.dev]
 opt-level = "s"
