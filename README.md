@@ -1,5 +1,5 @@
-This repository contains estima library AHRS example. It was tested with GY-86
-and [ESP32-C6-Zero](https://www.waveshare.com/wiki/ESP32-C6-Zero) boards.
+This repository contains AHRS example for [estima crate](https://github.com/copterust/estima/).
+It was tested with GY-86 and [ESP32-C6-Zero](https://www.waveshare.com/wiki/ESP32-C6-Zero) boards.
 
 <p align="center">
   <img src="docs/images/esp-ahrs-probe.png" alt="ESP AHRS Probe" width="80%">
